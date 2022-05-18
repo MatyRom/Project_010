@@ -1,0 +1,129 @@
+.header {
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.3em;
+    letter-spacing: 0.5rem;
+}
+.contenedor-padre {
+    margin: 1.2rem ;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    font-family: sans-serif;
+    background-color: white;
+}
+.contenedor-hijo {
+    box-shadow:  0 0 3px rgba(0 ,0 ,0 ,0.1);
+    object-fit:scale-down;
+    width: 100%;
+    height: 350px;
+}
+.hijo__imagen {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit:scale-down;
+}
+.hijo__contenido {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background-color: #fafafa;
+}
+.hijo__info {
+    padding: 15px;
+    display: flex;
+    color: #555555;
+    background-color: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #cccccc;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.hijo__link {
+    color: #6496Bc;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+
+}
+.hijo__link:hover {
+    text-decoration: underline;
+}
+.hijo__boton {
+    margin: 0;
+    width: 100%;
+}
+.card {
+    box-shadow: 0 0 20px #000000;
+}
+h2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.2em;
+    letter-spacing: 1.5rem;
+    color: black;
+}
+h5 {
+    padding-left: 14px;
+}
+button{
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: #0099CC;
+    background-color: white;
+    font-size: 16px;
+}
+button:hover {
+    color: white;
+    background-color: #0099CC;
+    transition-duration:  0.4s;
+}
+a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+a:hover {
+    opacity: 0.8;
+}
+.content__form {
+    border: 1px solid grey;
+    padding: 10px;
+}
+label {
+    width: 60px;
+    display: inline-block;
+}
+form {
+    margin: auto;
+    width: 50%;
+}
+h1 {
+    text-align: center;
+}
+input {
+    margin-top: 6px;
+    margin-right: 12px ;
+}
+@media (min-width: 600px) {
+    .contenedor-padre {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenedor-hijo {
+        width: 100%;
+    }
+}
+@media (min-width: 900px) {
+    .contenedor-padre {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contenedor-hijo {
+        width: 100%;
+    }
+}
